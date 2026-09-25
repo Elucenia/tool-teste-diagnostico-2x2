@@ -1,0 +1,77 @@
+[
+  {
+    "label": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "raw": {
+        "se": 89.53,
+        "sp": 62.79,
+        "vpp": 87.83,
+        "vpn": 66.67,
+        "lrp": 2.406,
+        "lrn": 0.1667,
+        "acc": 82.85
+      },
+      "level": "info",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+    "input": {
+      "vp": 8,
+      "fp": 1,
+      "fn": 2,
+      "vn": 9
+    },
+    "expected": {
+      "raw": {
+        "se": 80,
+        "sp": 90,
+        "lrp": 8,
+        "lrn": 0.2222,
+        "seLo": 49.02,
+        "seHi": 94.33
+      },
+      "tol": 0.01
+    },
+    "originalInput": {
+      "vp": 8,
+      "fp": 1,
+      "fn": 2,
+      "vn": 9
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sem doentes na tabela (VP e FN zero): erro",
+    "input": {
+      "vp": 0,
+      "fp": 5,
+      "fn": 0,
+      "vn": 20
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "vp": 0,
+      "fp": 5,
+      "fn": 0,
+      "vn": 20
+    },
+    "expandedZeroOptions": []
+  }
+]

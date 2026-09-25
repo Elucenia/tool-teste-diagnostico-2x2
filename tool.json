@@ -1,0 +1,234 @@
+{
+  "tool": {
+    "id": "teste-diagnostico-2x2",
+    "title": "Teste diagnóstico (tabela 2×2)",
+    "short": "Sensibilidade, especificidade, VPP, VPN e razões de verossimilhança",
+    "spec": [
+      "medicina-preventiva-e-social",
+      "medicina-de-familia-e-comunidade",
+      "medicina-laboratorial",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "desc": "Calcule sensibilidade, especificidade, valores preditivos, razões de verossimilhança e acurácia de um teste a partir da tabela 2×2, com IC 95% de Wilson.",
+    "lead": "Avalia o desempenho de um teste diagnóstico comparado a um padrão de referência, a partir dos verdadeiros e falsos positivos e negativos de um estudo.",
+    "fields": [
+      [
+        "vp",
+        "Verdadeiros positivos (VP): teste positivo e doente",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "231"
+        }
+      ],
+      [
+        "fp",
+        "Falsos positivos (FP): teste positivo e sem a doença",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "32"
+        }
+      ],
+      [
+        "fn",
+        "Falsos negativos (FN): teste negativo e doente",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "27"
+        }
+      ],
+      [
+        "vn",
+        "Verdadeiros negativos (VN): teste negativo e sem a doença",
+        "num",
+        {
+          "min": 0,
+          "max": 1000000,
+          "step": 1,
+          "ph": "54"
+        }
+      ]
+    ],
+    "formula": "<p><strong>Sensibilidade</strong> = VP / (VP + FN) · <strong>Especificidade</strong> = VN / (VN + FP) · <strong>VPP</strong> = VP / (VP + FP) · <strong>VPN</strong> = VN / (VN + FN) · <strong>Acurácia</strong> = (VP + VN) / total.</p><p><strong>RV+</strong> = sensibilidade / (1 − especificidade) · <strong>RV−</strong> = (1 − sensibilidade) / especificidade.</p><p>Intervalos de confiança de 95%: método do escore de Wilson para as proporções; para as razões de verossimilhança, método logarítmico (Simel, 1991), com EP(ln RV+) = √(1/VP − 1/(VP+FN) + 1/FP − 1/(FP+VN)).</p>",
+    "table": [
+      [
+        "Razão de verossimilhança",
+        "Efeito sobre a probabilidade de doença"
+      ],
+      [
+        "&gt; 10 ou &lt; 0,1",
+        "Grande: muitas vezes decisivo"
+      ],
+      [
+        "5 a 10 ou 0,1 a 0,2",
+        "Moderado"
+      ],
+      [
+        "2 a 5 ou 0,2 a 0,5",
+        "Pequeno"
+      ],
+      [
+        "0,5 a 2",
+        "Mínimo: o teste quase não muda a conduta"
+      ]
+    ],
+    "table_note": "Faixas de interpretação usuais das razões de verossimilhança (Deeks e Altman, 2004).",
+    "tips": [
+      "Sensibilidade e especificidade são propriedades do teste no espectro de pacientes estudado; <strong>VPP e VPN dependem da prevalência</strong>. Em população de baixa prevalência, o mesmo teste terá VPP bem menor.",
+      "Para aplicar o resultado a um paciente, prefira as <strong>razões de verossimilhança</strong>: elas levam da probabilidade pré-teste à pós-teste (use a ferramenta de probabilidade pós-teste).",
+      "Teste muito sensível, quando negativo, ajuda a descartar a doença (SnNout); teste muito específico, quando positivo, ajuda a confirmar (SpPin).",
+      "Desconfie de estudos com viés de espectro (só casos graves e controles saudáveis) ou de verificação (padrão de referência aplicado só a quem teve teste positivo): ambos inflam a acurácia.",
+      "Com caselas pequenas, os intervalos de confiança ficam largos: informe sempre o IC junto com a estimativa pontual."
+    ],
+    "sources": [
+      [
+        "Altman DG, Bland JM. Statistics Notes: Diagnostic tests 1: sensitivity and specificity. BMJ, 1994.",
+        "https://doi.org/10.1136/bmj.308.6943.1552"
+      ],
+      [
+        "Altman DG, Bland JM. Statistics Notes: Diagnostic tests 2: predictive values. BMJ, 1994.",
+        "https://doi.org/10.1136/bmj.309.6947.102"
+      ],
+      [
+        "Brown LD, Cai TT, DasGupta A. Interval estimation for a binomial proportion. Statistical Science, 2001.",
+        "https://doi.org/10.1214/ss/1009213286"
+      ],
+      [
+        "Simel DL, Samsa GP, Matchar DB. Likelihood ratios with confidence: sample size estimation for diagnostic test studies. J Clin Epidemiol, 1991.",
+        "https://doi.org/10.1016/0895-4356(91)90128-V"
+      ]
+    ],
+    "cases": [
+      [
+        "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        {
+          "vp": 231,
+          "fp": 32,
+          "fn": 27,
+          "vn": 54
+        },
+        {
+          "raw": {
+            "se": 89.53,
+            "sp": 62.79,
+            "vpp": 87.83,
+            "vpn": 66.67,
+            "lrp": 2.406,
+            "lrn": 0.1667,
+            "acc": 82.85
+          },
+          "level": "info",
+          "tol": 0.01
+        }
+      ],
+      [
+        "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        {
+          "vp": 8,
+          "fp": 1,
+          "fn": 2,
+          "vn": 9
+        },
+        {
+          "raw": {
+            "se": 80,
+            "sp": 90,
+            "lrp": 8,
+            "lrn": 0.2222,
+            "seLo": 49.02,
+            "seHi": 94.33
+          },
+          "tol": 0.01
+        }
+      ],
+      [
+        "Sem doentes na tabela (VP e FN zero): erro",
+        {
+          "vp": 0,
+          "fp": 5,
+          "fn": 0,
+          "vn": 20
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "cases": [
+        {
+          "label": "Tabela simétrica produz métricas80%, RV4 e0,25",
+          "input": {
+            "vp": 80,
+            "fp": 20,
+            "fn": 20,
+            "vn": 80
+          },
+          "expected": {
+            "se": 80,
+            "sp": 80,
+            "vpp": 80,
+            "vpn": 80,
+            "lrp": 4,
+            "lrn": 0.25,
+            "acc": 80
+          },
+          "status": "passed",
+          "failures": []
+        },
+        {
+          "label": "Ausência de doentes impede sensibilidade",
+          "input": {
+            "vp": 0,
+            "fn": 0,
+            "fp": 20,
+            "vn": 80
+          },
+          "expected": {
+            "error": true
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}
