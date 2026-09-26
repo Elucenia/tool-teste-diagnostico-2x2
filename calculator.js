@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-teste-diagnostico-2x2 · Elucenia · https://github.com/Elucenia/tool-teste-diagnostico-2x2
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"teste-diagnostico-2x2","title":"Teste diagnóstico (tabela 2×2)","fields":[["vp","Verdadeiros positivos (VP): teste positivo e doente","num",{"min":0,"max":1000000,"step":1,"ph":"231"}],["fp","Falsos positivos (FP): teste positivo e sem a doença","num",{"min":0,"max":1000000,"step":1,"ph":"32"}],["fn","Falsos negativos (FN): teste negativo e doente","num",{"min":0,"max":1000000,"step":1,"ph":"27"}],["vn","Verdadeiros negativos (VN): teste negativo e sem a doença","num",{"min":0,"max":1000000,"step":1,"ph":"54"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
