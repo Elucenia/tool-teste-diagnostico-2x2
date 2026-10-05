@@ -1,0 +1,857 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "teste-diagnostico-2x2",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/teste-diagnostico-2x2/calculator.js",
+    "sha256": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae",
+    "bytes": 8184
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "teste-diagnostico-2x2",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+      "originalInput": {
+        "vp": 231,
+        "fp": 32,
+        "fn": 27,
+        "vn": 54
+      },
+      "input": {
+        "vp": 231,
+        "fp": 32,
+        "fn": 27,
+        "vn": 54
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "se": 89.53,
+          "sp": 62.79,
+          "vpp": 87.83,
+          "vpn": 66.67,
+          "lrp": 2.406,
+          "lrn": 0.1667,
+          "acc": 82.85
+        },
+        "level": "info",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "89,5%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+        "raw": {
+          "se": 89.53488372093024,
+          "sp": 62.7906976744186,
+          "vpp": 87.83269961977186,
+          "vpn": 66.66666666666666,
+          "lrp": 2.40625,
+          "lrn": 0.1666666666666666,
+          "acc": 82.84883720930233,
+          "seLo": 85.20214058440061,
+          "seHi": 92.70759948181326
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "vp": 231,
+            "fp": 32,
+            "fn": 27,
+            "vn": 54
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+          "startedAt": "2026-10-05T17:39:55.816Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "teste-diagnostico-2x2",
+              "main": [
+                "89,5%",
+                ""
+              ],
+              "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+              "raw": {
+                "se": 89.53488372093024,
+                "sp": 62.7906976744186,
+                "vpp": 87.83269961977186,
+                "vpn": 66.66666666666666,
+                "lrp": 2.40625,
+                "lrn": 0.1666666666666666,
+                "acc": 82.84883720930233,
+                "seLo": 85.20214058440061,
+                "seHi": 92.70759948181326
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "89c8c010cc1a50cc6fb6f57fbae1d0a7ba59f9f3eed39626064e7d7d373d81a5",
+          "bytes": 360,
+          "elapsedMs": 3.9724999999743886
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+        "startedAt": "2026-10-05T17:39:55.816Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "teste-diagnostico-2x2",
+            "main": [
+              "89,5%",
+              ""
+            ],
+            "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+            "raw": {
+              "se": 89.53488372093024,
+              "sp": 62.7906976744186,
+              "vpp": 87.83269961977186,
+              "vpn": 66.66666666666666,
+              "lrp": 2.40625,
+              "lrn": 0.1666666666666666,
+              "acc": 82.84883720930233,
+              "seLo": 85.20214058440061,
+              "seHi": 92.70759948181326
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "89c8c010cc1a50cc6fb6f57fbae1d0a7ba59f9f3eed39626064e7d7d373d81a5",
+        "bytes": 360,
+        "elapsedMs": 3.9724999999743886
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.se",
+            "expected": 89.53,
+            "obtained": 89.53488372093024,
+            "tolerance": 0.01,
+            "difference": 0.0048837209302377005,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sp",
+            "expected": 62.79,
+            "obtained": 62.7906976744186,
+            "tolerance": 0.01,
+            "difference": 0.0006976744186033557,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.vpp",
+            "expected": 87.83,
+            "obtained": 87.83269961977186,
+            "tolerance": 0.01,
+            "difference": 0.0026996197718602843,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.vpn",
+            "expected": 66.67,
+            "obtained": 66.66666666666666,
+            "tolerance": 0.01,
+            "difference": 0.0033333333333445125,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lrp",
+            "expected": 2.406,
+            "obtained": 2.40625,
+            "tolerance": 0.01,
+            "difference": 0.00024999999999986144,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lrn",
+            "expected": 0.1667,
+            "obtained": 0.1666666666666666,
+            "tolerance": 0.01,
+            "difference": 0.00003333333333338517,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.acc",
+            "expected": 82.85,
+            "obtained": 82.84883720930233,
+            "tolerance": 0.01,
+            "difference": 0.0011627906976627855,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.se",
+            "expected": 89.53488372093024,
+            "obtained": 89.53488372093024,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sp",
+            "expected": 62.7906976744186,
+            "obtained": 62.7906976744186,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vpp",
+            "expected": 87.83269961977186,
+            "obtained": 87.83269961977186,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vpn",
+            "expected": 66.66666666666666,
+            "obtained": 66.66666666666666,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lrp",
+            "expected": 2.40625,
+            "obtained": 2.40625,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lrn",
+            "expected": 0.1666666666666666,
+            "obtained": 0.1666666666666666,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acc",
+            "expected": 82.84883720930233,
+            "obtained": 82.84883720930233,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.seLo",
+            "expected": 85.20214058440061,
+            "obtained": 85.20214058440061,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.seHi",
+            "expected": 92.70759948181326,
+            "obtained": 92.70759948181326,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "89,5%",
+            "obtained": "89,5%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "teste-diagnostico-2x2",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+      "originalInput": {
+        "vp": 8,
+        "fp": 1,
+        "fn": 2,
+        "vn": 9
+      },
+      "input": {
+        "vp": 8,
+        "fp": 1,
+        "fn": 2,
+        "vn": 9
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "se": 80,
+          "sp": 90,
+          "lrp": 8,
+          "lrn": 0.2222,
+          "seLo": 49.02,
+          "seHi": 94.33
+        },
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "80,0%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+        "raw": {
+          "se": 80,
+          "sp": 90,
+          "vpp": 88.88888888888889,
+          "vpn": 81.81818181818183,
+          "lrp": 8.000000000000002,
+          "lrn": 0.22222222222222215,
+          "acc": 85,
+          "seLo": 49.016246912213234,
+          "seHi": 94.3317849062233
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "vp": 8,
+            "fp": 1,
+            "fn": 2,
+            "vn": 9
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+          "startedAt": "2026-10-05T17:39:56.130Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "teste-diagnostico-2x2",
+              "main": [
+                "80,0%",
+                ""
+              ],
+              "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+              "raw": {
+                "se": 80,
+                "sp": 90,
+                "vpp": 88.88888888888889,
+                "vpn": 81.81818181818183,
+                "lrp": 8.000000000000002,
+                "lrn": 0.22222222222222215,
+                "acc": 85,
+                "seLo": 49.016246912213234,
+                "seHi": 94.3317849062233
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "47b36546debb68ec38fc36d79df12766c74dbafa38ca59618b3d6d0647a9e875",
+          "bytes": 327,
+          "elapsedMs": 5.437899999989895
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+        "startedAt": "2026-10-05T17:39:56.130Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "teste-diagnostico-2x2",
+            "main": [
+              "80,0%",
+              ""
+            ],
+            "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+            "raw": {
+              "se": 80,
+              "sp": 90,
+              "vpp": 88.88888888888889,
+              "vpn": 81.81818181818183,
+              "lrp": 8.000000000000002,
+              "lrn": 0.22222222222222215,
+              "acc": 85,
+              "seLo": 49.016246912213234,
+              "seHi": 94.3317849062233
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "47b36546debb68ec38fc36d79df12766c74dbafa38ca59618b3d6d0647a9e875",
+        "bytes": 327,
+        "elapsedMs": 5.437899999989895
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.se",
+            "expected": 80,
+            "obtained": 80,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sp",
+            "expected": 90,
+            "obtained": 90,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lrp",
+            "expected": 8,
+            "obtained": 8.000000000000002,
+            "tolerance": 0.01,
+            "difference": 1.7763568394002505e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lrn",
+            "expected": 0.2222,
+            "obtained": 0.22222222222222215,
+            "tolerance": 0.01,
+            "difference": 0.00002222222222214576,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.seLo",
+            "expected": 49.02,
+            "obtained": 49.016246912213234,
+            "tolerance": 0.01,
+            "difference": 0.0037530877867695267,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.seHi",
+            "expected": 94.33,
+            "obtained": 94.3317849062233,
+            "tolerance": 0.01,
+            "difference": 0.001784906223306848,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.se",
+            "expected": 80,
+            "obtained": 80,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sp",
+            "expected": 90,
+            "obtained": 90,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vpp",
+            "expected": 88.88888888888889,
+            "obtained": 88.88888888888889,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.vpn",
+            "expected": 81.81818181818183,
+            "obtained": 81.81818181818183,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lrp",
+            "expected": 8.000000000000002,
+            "obtained": 8.000000000000002,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lrn",
+            "expected": 0.22222222222222215,
+            "obtained": 0.22222222222222215,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acc",
+            "expected": 85,
+            "obtained": 85,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.seLo",
+            "expected": 49.016246912213234,
+            "obtained": 49.016246912213234,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.seHi",
+            "expected": 94.3317849062233,
+            "obtained": 94.3317849062233,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "80,0%",
+            "obtained": "80,0%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "teste-diagnostico-2x2",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Sem doentes na tabela (VP e FN zero): erro",
+      "originalInput": {
+        "vp": 0,
+        "fp": 5,
+        "fn": 0,
+        "vn": 20
+      },
+      "input": {
+        "vp": 0,
+        "fp": 5,
+        "fn": 0,
+        "vn": 20
+      },
+      "amendments": [],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "vp": 0,
+            "fp": 5,
+            "fn": 0,
+            "vn": 20
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+          "startedAt": "2026-10-05T17:39:56.442Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada.",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "41e351a8bc5ac09118fa4b1959d0478ebc28ad72971753fa5881aad16b2a36e4",
+          "bytes": 118,
+          "elapsedMs": 3.2066999999806285
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/teste-diagnostico-2x2/calculate",
+        "startedAt": "2026-10-05T17:39:56.442Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada.",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "41e351a8bc5ac09118fa4b1959d0478ebc28ad72971753fa5881aad16b2a36e4",
+        "bytes": 118,
+        "elapsedMs": 3.2066999999806285
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada.",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
