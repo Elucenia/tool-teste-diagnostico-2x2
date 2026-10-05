@@ -1,0 +1,650 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vp",
+    "input": {
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vp",
+    "input": {
+      "vp": "",
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vp",
+    "input": {
+      "vp": "NaN",
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vp",
+    "input": {
+      "vp": "Infinity",
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vp",
+    "input": {
+      "vp": "1e309",
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vp",
+    "input": {
+      "vp": "invalid",
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vp",
+    "input": {
+      "vp": {},
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vp",
+    "input": {
+      "vp": true,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vp",
+    "input": {
+      "vp": -1,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vp",
+    "input": {
+      "vp": 1100000,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject noninteger numeric field vp",
+    "input": {
+      "vp": 0.5,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INTEGER_REQUIRED",
+      "field": "vp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fp",
+    "input": {
+      "vp": 231,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fp",
+    "input": {
+      "vp": 231,
+      "fp": "",
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fp",
+    "input": {
+      "vp": 231,
+      "fp": "NaN",
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fp",
+    "input": {
+      "vp": 231,
+      "fp": "Infinity",
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fp",
+    "input": {
+      "vp": 231,
+      "fp": "1e309",
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fp",
+    "input": {
+      "vp": 231,
+      "fp": "invalid",
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fp",
+    "input": {
+      "vp": 231,
+      "fp": {},
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fp",
+    "input": {
+      "vp": 231,
+      "fp": true,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fp",
+    "input": {
+      "vp": 231,
+      "fp": -1,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fp",
+    "input": {
+      "vp": 231,
+      "fp": 1100000,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject noninteger numeric field fp",
+    "input": {
+      "vp": 231,
+      "fp": 0.5,
+      "fn": 27,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INTEGER_REQUIRED",
+      "field": "fp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "vn": 54
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": "",
+      "vn": 54
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": "NaN",
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": "Infinity",
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": "1e309",
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": "invalid",
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": {},
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": true,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": -1,
+      "vn": 54
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 1100000,
+      "vn": 54
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject noninteger numeric field fn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 0.5,
+      "vn": 54
+    },
+    "expected": {
+      "code": "INTEGER_REQUIRED",
+      "field": "fn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": 1100000
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject noninteger numeric field vn",
+    "input": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": 0.5
+    },
+    "expected": {
+      "code": "INTEGER_REQUIRED",
+      "field": "vn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

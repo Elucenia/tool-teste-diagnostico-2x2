@@ -1,6 +1,15 @@
 [
   {
-    "label": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+    "id": "teste-diagnostico-2x2",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+    "originalInput": {
+      "vp": 231,
+      "fp": 32,
+      "fn": 27,
+      "vn": 54
+    },
     "input": {
       "vp": 231,
       "fp": 32,
@@ -20,16 +29,44 @@
       "level": "info",
       "tol": 0.01
     },
-    "originalInput": {
-      "vp": 231,
-      "fp": 32,
-      "fn": 27,
-      "vn": 54
+    "recordedResult": {
+      "main": [
+        "89,5%",
+        ""
+      ],
+      "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+      "raw": {
+        "se": 89.53488372093024,
+        "sp": 62.7906976744186,
+        "vpp": 87.83269961977186,
+        "vpn": 66.66666666666666,
+        "lrp": 2.40625,
+        "lrn": 0.1666666666666666,
+        "acc": 82.84883720930233,
+        "seLo": 85.20214058440061,
+        "seHi": 92.70759948181326
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+    "id": "teste-diagnostico-2x2",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+    "originalInput": {
+      "vp": 8,
+      "fp": 1,
+      "fn": 2,
+      "vn": 9
+    },
     "input": {
       "vp": 8,
       "fp": 1,
@@ -47,16 +84,44 @@
       },
       "tol": 0.01
     },
-    "originalInput": {
-      "vp": 8,
-      "fp": 1,
-      "fn": 2,
-      "vn": 9
+    "recordedResult": {
+      "main": [
+        "80,0%",
+        ""
+      ],
+      "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+      "raw": {
+        "se": 80,
+        "sp": 90,
+        "vpp": 88.88888888888889,
+        "vpn": 81.81818181818183,
+        "lrp": 8.000000000000002,
+        "lrn": 0.22222222222222215,
+        "acc": 85,
+        "seLo": 49.016246912213234,
+        "seHi": 94.3317849062233
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Sem doentes na tabela (VP e FN zero): erro",
+    "id": "teste-diagnostico-2x2",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Sem doentes na tabela (VP e FN zero): erro",
+    "originalInput": {
+      "vp": 0,
+      "fp": 5,
+      "fn": 0,
+      "vn": 20
+    },
     "input": {
       "vp": 0,
       "fp": 5,
@@ -66,12 +131,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "vp": 0,
-      "fp": 5,
-      "fn": 0,
-      "vn": 20
+    "recordedResult": {
+      "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

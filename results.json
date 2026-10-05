@@ -1,0 +1,465 @@
+{
+  "id": "teste-diagnostico-2x2",
+  "at": "2026-10-05T17:30:11.407Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/teste-diagnostico-2x2/calculator.js",
+    "bytes": 8184,
+    "sha256": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae"
+  },
+  "cases": [
+    {
+      "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+      "input": {
+        "vp": 231,
+        "fp": 32,
+        "fn": 27,
+        "vn": 54
+      },
+      "obtained": {
+        "id": "teste-diagnostico-2x2",
+        "main": [
+          "89,5%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+        "raw": {
+          "se": 89.53488372093024,
+          "sp": 62.7906976744186,
+          "vpp": 87.83269961977186,
+          "vpn": 66.66666666666666,
+          "lrp": 2.40625,
+          "lrn": 0.1666666666666666,
+          "acc": 82.84883720930233,
+          "seLo": 85.20214058440061,
+          "seHi": 92.70759948181326
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.se",
+          "expected": 89.53,
+          "obtained": 89.53488372093024,
+          "tolerance": 0.01,
+          "difference": 0.0048837209302377005,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.sp",
+          "expected": 62.79,
+          "obtained": 62.7906976744186,
+          "tolerance": 0.01,
+          "difference": 0.0006976744186033557,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.vpp",
+          "expected": 87.83,
+          "obtained": 87.83269961977186,
+          "tolerance": 0.01,
+          "difference": 0.0026996197718602843,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.vpn",
+          "expected": 66.67,
+          "obtained": 66.66666666666666,
+          "tolerance": 0.01,
+          "difference": 0.0033333333333445125,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lrp",
+          "expected": 2.406,
+          "obtained": 2.40625,
+          "tolerance": 0.01,
+          "difference": 0.00024999999999986144,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lrn",
+          "expected": 0.1667,
+          "obtained": 0.1666666666666666,
+          "tolerance": 0.01,
+          "difference": 0.00003333333333338517,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.acc",
+          "expected": 82.85,
+          "obtained": 82.84883720930233,
+          "tolerance": 0.01,
+          "difference": 0.0011627906976627855,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.se",
+          "expected": 89.53488372093024,
+          "obtained": 89.53488372093024,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.sp",
+          "expected": 62.7906976744186,
+          "obtained": 62.7906976744186,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vpp",
+          "expected": 87.83269961977186,
+          "obtained": 87.83269961977186,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vpn",
+          "expected": 66.66666666666666,
+          "obtained": 66.66666666666666,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lrp",
+          "expected": 2.40625,
+          "obtained": 2.40625,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lrn",
+          "expected": 0.1666666666666666,
+          "obtained": 0.1666666666666666,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acc",
+          "expected": 82.84883720930233,
+          "obtained": 82.84883720930233,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.seLo",
+          "expected": 85.20214058440061,
+          "obtained": 85.20214058440061,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.seHi",
+          "expected": 92.70759948181326,
+          "obtained": 92.70759948181326,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "89,5%",
+          "obtained": "89,5%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+      "input": {
+        "vp": 8,
+        "fp": 1,
+        "fn": 2,
+        "vn": 9
+      },
+      "obtained": {
+        "id": "teste-diagnostico-2x2",
+        "main": [
+          "80,0%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+        "raw": {
+          "se": 80,
+          "sp": 90,
+          "vpp": 88.88888888888889,
+          "vpn": 81.81818181818183,
+          "lrp": 8.000000000000002,
+          "lrn": 0.22222222222222215,
+          "acc": 85,
+          "seLo": 49.016246912213234,
+          "seHi": 94.3317849062233
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.se",
+          "expected": 80,
+          "obtained": 80,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.sp",
+          "expected": 90,
+          "obtained": 90,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lrp",
+          "expected": 8,
+          "obtained": 8.000000000000002,
+          "tolerance": 0.01,
+          "difference": 1.7763568394002505e-15,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lrn",
+          "expected": 0.2222,
+          "obtained": 0.22222222222222215,
+          "tolerance": 0.01,
+          "difference": 0.00002222222222214576,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.seLo",
+          "expected": 49.02,
+          "obtained": 49.016246912213234,
+          "tolerance": 0.01,
+          "difference": 0.0037530877867695267,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.seHi",
+          "expected": 94.33,
+          "obtained": 94.3317849062233,
+          "tolerance": 0.01,
+          "difference": 0.001784906223306848,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.se",
+          "expected": 80,
+          "obtained": 80,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.sp",
+          "expected": 90,
+          "obtained": 90,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vpp",
+          "expected": 88.88888888888889,
+          "obtained": 88.88888888888889,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.vpn",
+          "expected": 81.81818181818183,
+          "obtained": 81.81818181818183,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lrp",
+          "expected": 8.000000000000002,
+          "obtained": 8.000000000000002,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lrn",
+          "expected": 0.22222222222222215,
+          "obtained": 0.22222222222222215,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acc",
+          "expected": 85,
+          "obtained": 85,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.seLo",
+          "expected": 49.016246912213234,
+          "obtained": 49.016246912213234,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.seHi",
+          "expected": 94.3317849062233,
+          "obtained": 94.3317849062233,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "80,0%",
+          "obtained": "80,0%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Sem doentes na tabela (VP e FN zero): erro",
+      "input": {
+        "vp": 0,
+        "fp": 5,
+        "fn": 0,
+        "vn": 20
+      },
+      "obtained": {
+        "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 48,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

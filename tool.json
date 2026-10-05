@@ -3,15 +3,15 @@
     "id": "teste-diagnostico-2x2",
     "title": "Teste diagnóstico (tabela 2×2)",
     "short": "Sensibilidade, especificidade, VPP, VPN e razões de verossimilhança",
+    "desc": "Calcule sensibilidade, especificidade, valores preditivos, razões de verossimilhança e acurácia de um teste a partir da tabela 2×2, com IC 95% de Wilson.",
+    "lead": "Avalia o desempenho de um teste diagnóstico comparado a um padrão de referência, a partir dos verdadeiros e falsos positivos e negativos de um estudo.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-preventiva-e-social",
       "medicina-de-familia-e-comunidade",
       "medicina-laboratorial",
       "clinica-medica"
     ],
-    "tier": 1,
-    "desc": "Calcule sensibilidade, especificidade, valores preditivos, razões de verossimilhança e acurácia de um teste a partir da tabela 2×2, com IC 95% de Wilson.",
-    "lead": "Avalia o desempenho de um teste diagnóstico comparado a um padrão de referência, a partir dos verdadeiros e falsos positivos e negativos de um estudo.",
     "fields": [
       [
         "vp",
@@ -21,7 +21,8 @@
           "min": 0,
           "max": 1000000,
           "step": 1,
-          "ph": "231"
+          "ph": "231",
+          "integer": true
         }
       ],
       [
@@ -32,7 +33,8 @@
           "min": 0,
           "max": 1000000,
           "step": 1,
-          "ph": "32"
+          "ph": "32",
+          "integer": true
         }
       ],
       [
@@ -43,7 +45,8 @@
           "min": 0,
           "max": 1000000,
           "step": 1,
-          "ph": "27"
+          "ph": "27",
+          "integer": true
         }
       ],
       [
@@ -54,41 +57,12 @@
           "min": 0,
           "max": 1000000,
           "step": 1,
-          "ph": "54"
+          "ph": "54",
+          "integer": true
         }
       ]
     ],
     "formula": "<p><strong>Sensibilidade</strong> = VP / (VP + FN) · <strong>Especificidade</strong> = VN / (VN + FP) · <strong>VPP</strong> = VP / (VP + FP) · <strong>VPN</strong> = VN / (VN + FN) · <strong>Acurácia</strong> = (VP + VN) / total.</p><p><strong>RV+</strong> = sensibilidade / (1 − especificidade) · <strong>RV−</strong> = (1 − sensibilidade) / especificidade.</p><p>Intervalos de confiança de 95%: método do escore de Wilson para as proporções; para as razões de verossimilhança, método logarítmico (Simel, 1991), com EP(ln RV+) = √(1/VP − 1/(VP+FN) + 1/FP − 1/(FP+VN)).</p>",
-    "table": [
-      [
-        "Razão de verossimilhança",
-        "Efeito sobre a probabilidade de doença"
-      ],
-      [
-        "&gt; 10 ou &lt; 0,1",
-        "Grande: muitas vezes decisivo"
-      ],
-      [
-        "5 a 10 ou 0,1 a 0,2",
-        "Moderado"
-      ],
-      [
-        "2 a 5 ou 0,2 a 0,5",
-        "Pequeno"
-      ],
-      [
-        "0,5 a 2",
-        "Mínimo: o teste quase não muda a conduta"
-      ]
-    ],
-    "table_note": "Faixas de interpretação usuais das razões de verossimilhança (Deeks e Altman, 2004).",
-    "tips": [
-      "Sensibilidade e especificidade são propriedades do teste no espectro de pacientes estudado; <strong>VPP e VPN dependem da prevalência</strong>. Em população de baixa prevalência, o mesmo teste terá VPP bem menor.",
-      "Para aplicar o resultado a um paciente, prefira as <strong>razões de verossimilhança</strong>: elas levam da probabilidade pré-teste à pós-teste (use a ferramenta de probabilidade pós-teste).",
-      "Teste muito sensível, quando negativo, ajuda a descartar a doença (SnNout); teste muito específico, quando positivo, ajuda a confirmar (SpPin).",
-      "Desconfie de estudos com viés de espectro (só casos graves e controles saudáveis) ou de verificação (padrão de referência aplicado só a quem teve teste positivo): ambos inflam a acurácia.",
-      "Com caselas pequenas, os intervalos de confiança ficam largos: informe sempre o IC junto com a estimativa pontual."
-    ],
     "sources": [
       [
         "Altman DG, Bland JM. Statistics Notes: Diagnostic tests 1: sensitivity and specificity. BMJ, 1994.",
@@ -105,6 +79,14 @@
       [
         "Simel DL, Samsa GP, Matchar DB. Likelihood ratios with confidence: sample size estimation for diagnostic test studies. J Clin Epidemiol, 1991.",
         "https://doi.org/10.1016/0895-4356(91)90128-V"
+      ],
+      [
+        "Deeks/Altman2004",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC478236/"
+      ],
+      [
+        "Brown/Cai/DasGupta2001",
+        "https://repository.upenn.edu/bitstreams/c3690c8b-efaf-485b-a984-39cfc22aae13/download"
       ]
     ],
     "cases": [
@@ -163,9 +145,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -178,48 +157,235 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "2×2:Sens/Spec/PPV/NPV; Wilson 95%proporções; Simel 1991 log CILR; sem Waldproporções",
+    "implementationVersion": "teste-diagnostico-2x2@native-2026-10-03+badc4e7b62c9",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2540489/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Sensibilidade = VP / (VP + FN) · Especificidade = VN / (VN + FP) · VPP = VP / (VP + FP) · VPN = VN / (VN + FN) · Acurácia = (VP + VN) / total. RV+ = sensibilidade / (1 − especificidade) · RV− = (1 − sensibilidade) / especificidade. Intervalos de confiança de 95%: método do escore de Wilson para as proporções; para as razões de verossimilhança, método logarítmico (Simel, 1991), com EP(ln RV+) = √(1/VP − 1/(VP+FN) + 1/FP − 1/(FP+VN)).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "vp",
+            "label": "Verdadeiros positivos (VP): teste positivo e doente",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null,
+            "integer": true
+          },
+          {
+            "key": "fp",
+            "label": "Falsos positivos (FP): teste positivo e sem a doença",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null,
+            "integer": true
+          },
+          {
+            "key": "fn",
+            "label": "Falsos negativos (FN): teste negativo e doente",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null,
+            "integer": true
+          },
+          {
+            "key": "vn",
+            "label": "Verdadeiros negativos (VN): teste negativo e sem a doença",
+            "type": "num",
+            "min": 0,
+            "max": 1000000,
+            "optional": false,
+            "options": null,
+            "integer": true
+          }
+        ],
+        "hash": "28b3dae4bded346d49699dfdbdbac8482f76d51ee590999ac6d401b06cb39092"
+      },
+      "sourceEditions": [
         {
-          "label": "Tabela simétrica produz métricas80%, RV4 e0,25",
-          "input": {
-            "vp": 80,
-            "fp": 20,
-            "fn": 20,
-            "vn": 80
+          "citation": "Altman DG, Bland JM. Statistics Notes: Diagnostic tests 1: sensitivity and specificity. BMJ, 1994.",
+          "url": "https://doi.org/10.1136/bmj.308.6943.1552",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Diagnostic tests. 1: Sensitivity and specificity.",
+            "year": "1994",
+            "firstPublicationDate": "1994-06-01",
+            "doi": "10.1136/bmj.308.6943.1552",
+            "pmid": "8019315",
+            "pmcid": "PMC2540489",
+            "journal": "BMJ (Clinical research ed.)",
+            "authors": "Altman DG, Bland JM."
           },
-          "expected": {
-            "se": 80,
-            "sp": 80,
-            "vpp": 80,
-            "vpn": 80,
-            "lrp": 4,
-            "lrn": 0.25,
-            "acc": 80
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2540489/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
         },
         {
-          "label": "Ausência de doentes impede sensibilidade",
-          "input": {
-            "vp": 0,
-            "fn": 0,
-            "fp": 20,
-            "vn": 80
+          "citation": "Altman DG, Bland JM. Statistics Notes: Diagnostic tests 2: predictive values. BMJ, 1994.",
+          "url": "https://doi.org/10.1136/bmj.309.6947.102",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Diagnostic tests 2: Predictive values.",
+            "year": "1994",
+            "firstPublicationDate": "1994-07-01",
+            "doi": "10.1136/bmj.309.6947.102",
+            "pmid": "8038641",
+            "pmcid": "PMC2540558",
+            "journal": "BMJ (Clinical research ed.)",
+            "authors": "Altman DG, Bland JM."
           },
-          "expected": {
-            "error": true
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2540558/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Brown LD, Cai TT, DasGupta A. Interval estimation for a binomial proportion. Statistical Science, 2001.",
+          "url": "https://doi.org/10.1214/ss/1009213286",
+          "class": "publisher-deposited-bibliography-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publisherDepositedMetadata": {
+            "title": "Interval Estimation for a Binomial Proportion",
+            "doi": "10.1214/ss/1009213286",
+            "year": 2001,
+            "publisher": "Institute of Mathematical Statistics",
+            "journal": "Statistical Science",
+            "authors": [
+              "Lawrence D. Brown",
+              "T. Tony Cai",
+              "Anirban DasGupta"
+            ],
+            "url": "https://doi.org/10.1214/ss/1009213286"
           },
-          "status": "passed",
-          "failures": []
+          "publication": {
+            "title": "Interval Estimation for a Binomial Proportion",
+            "doi": "10.1214/ss/1009213286",
+            "year": 2001,
+            "publisher": "Institute of Mathematical Statistics",
+            "journal": "Statistical Science",
+            "authors": [
+              "Lawrence D. Brown",
+              "T. Tony Cai",
+              "Anirban DasGupta"
+            ],
+            "url": "https://doi.org/10.1214/ss/1009213286"
+          }
+        },
+        {
+          "citation": "Simel DL, Samsa GP, Matchar DB. Likelihood ratios with confidence: sample size estimation for diagnostic test studies. J Clin Epidemiol, 1991.",
+          "url": "https://doi.org/10.1016/0895-4356(91)90128-V",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Likelihood ratios with confidence: sample size estimation for diagnostic test studies.",
+            "year": "1991",
+            "firstPublicationDate": "1991-01-01",
+            "doi": "10.1016/0895-4356(91)90128-v",
+            "pmid": "1941027",
+            "journal": "Journal of clinical epidemiology",
+            "authors": "Simel DL, Samsa GP, Matchar DB."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1941027/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "7c4f42aa5c84c3f829e654cd82587de218f28caab58ed15b8b050dd7ba5f9f76",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae",
+      "technicalAmendment": {
+        "version": "scientific-metric-states-and-discrete-counts-v1",
+        "scope": "Explicit infinite/undefined metric state encoding; discrete counts only for NNT and 2×2 tables. Finite formula values, source edition and clinical approval status preserved.",
+        "candidateManifestSha256": "b23825d436a8b2af8351515df4605477adb1f2345c194e89b3c0a34c44f1be7d",
+        "clinicalApproval": "not-performed"
+      }
+    },
+    "limits": "A tabela exige classificação binária do teste e do estado de referência, com contagens coerentes para a mesma população. Valor preditivo positivo e negativo dependem da prevalência; não se transferem automaticamente para outra população. Um denominador zero pode tornar a medida indefinida. Os intervalos de Wilson para proporções e logarítmicos para razões de verossimilhança são métodos diferentes; contagens zero e amostras pequenas exigem interpretação específica. Esta análise não demonstra, sozinha, a qualidade do padrão de referência nem valida o teste.",
+    "limitsEvidence": {
+      "status": "direct-original-body-original-abstract-and-primary-indexed-abstract-read",
+      "sources": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC478236/",
+          "edition": "Deeks/Altman2004",
+          "readScope": "Direct original methodologicalbody read:binary/categories,LR and prior/prevalence dependence."
+        },
+        {
+          "url": "https://doi.org/10.1016/0895-4356(91)90128-V",
+          "edition": "Simel1991",
+          "readScope": "Exact original abstract fully read:LRconfidenceintervals,binary and ordinaltestoutcomes;fullpaper not read."
+        },
+        {
+          "url": "https://repository.upenn.edu/bitstreams/c3690c8b-efaf-485b-a984-39cfc22aae13/download",
+          "edition": "Brown/Cai/DasGupta2001",
+          "readScope": "Original primary institutional-indexed abstract/introduction read:Wilson/Jeffreys versus Waldcoverage;directrepository403,publisheriframeblocked,and authorPDFscannedwithouttext. Fullformula section not read."
+        }
+      ],
+      "populationScope": "Binary index test versus reference status with context-specific predictive values.",
+      "remainingChecks": [
+        "FullSimel1991 and Brown2001 formula sections not read.",
+        "No reference-standard verification,bias assessment or full diagnosticstudy validation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/teste-diagnostico-2x2/calculator.js",
+    "bytes": 8184,
+    "sha256": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "db940e331874dea262d8102e599da74d24f1f09ef89b3600f3715999e2d2e436",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "8b6d5449d93e31c29d8866ffda7b82955af76758fa9e2b89ab3a0154cc83ab47",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "8b6d5449d93e31c29d8866ffda7b82955af76758fa9e2b89ab3a0154cc83ab47",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
