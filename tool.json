@@ -160,7 +160,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "2×2:Sens/Spec/PPV/NPV; Wilson 95%proporções; Simel 1991 log CILR; sem Waldproporções",
-    "implementationVersion": "teste-diagnostico-2x2@native-2026-10-03+badc4e7b62c9",
+    "implementationVersion": "teste-diagnostico-2x2@native-2026-10-05+ebeb3486e6f0",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2540489/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -328,13 +328,41 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae",
+      "implementationHash": "ebeb3486e6f0eafc71d1e10b25a93bcba676c0035dfef6df9dd836ce0075bf30",
       "technicalAmendment": {
         "version": "scientific-metric-states-and-discrete-counts-v1",
         "scope": "Explicit infinite/undefined metric state encoding; discrete counts only for NNT and 2×2 tables. Finite formula values, source edition and clinical approval status preserved.",
         "candidateManifestSha256": "b23825d436a8b2af8351515df4605477adb1f2345c194e89b3c0a34c44f1be7d",
         "clinicalApproval": "not-performed"
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "teste-diagnostico-2x2@native-2026-10-03+badc4e7b62c9",
+          "previousImplementationHash": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae",
+          "implementationHash": "ebeb3486e6f0eafc71d1e10b25a93bcba676c0035dfef6df9dd836ce0075bf30",
+          "scientificBodySha256": "167d1ee7ffaaf9d304470ccb38faa8d1505f497e7ed57904998b6c9ad7b00640",
+          "metadataContractHash": "28b3dae4bded346d49699dfdbdbac8482f76d51ee590999ac6d401b06cb39092",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A tabela exige classificação binária do teste e do estado de referência, com contagens coerentes para a mesma população. Valor preditivo positivo e negativo dependem da prevalência; não se transferem automaticamente para outra população. Um denominador zero pode tornar a medida indefinida. Os intervalos de Wilson para proporções e logarítmicos para razões de verossimilhança são métodos diferentes; contagens zero e amostras pequenas exigem interpretação específica. Esta análise não demonstra, sozinha, a qualidade do padrão de referência nem valida o teste.",
     "limitsEvidence": {
@@ -369,20 +397,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/teste-diagnostico-2x2/calculator.js",
-    "bytes": 8184,
-    "sha256": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae"
+    "bytes": 8389,
+    "sha256": "ebeb3486e6f0eafc71d1e10b25a93bcba676c0035dfef6df9dd836ce0075bf30"
   },
-  "sourceToolSha256": "db940e331874dea262d8102e599da74d24f1f09ef89b3600f3715999e2d2e436",
+  "sourceToolSha256": "5577a6d1cae061aa66510d72f5fc4d81952ced36290fe765a4a74528a65abeba",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "8b6d5449d93e31c29d8866ffda7b82955af76758fa9e2b89ab3a0154cc83ab47",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "8b6d5449d93e31c29d8866ffda7b82955af76758fa9e2b89ab3a0154cc83ab47",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

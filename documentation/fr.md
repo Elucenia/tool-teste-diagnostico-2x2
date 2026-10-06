@@ -89,3 +89,41 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Sensibilité 89,5 % et spécificité 62,8 %. Rapports de vraisemblance modérés (RV+ entre 5 et 10 ou RV− entre 0,1 et 0,2).
+
+| Détails du résultat | |
+| --- | --- |
+| Spécificité | 62,8% (IC 95% : 52,2 % à 72,3 %) |
+| Valeur prédictive positive | 87,8% (IC 95% : 83,3 % à 91,2 %) |
+| Valeur prédictive négative | 66,7% (IC 95% : 55,9 % à 76,0 %) |
+| Rapport de vraisemblance positif (RV+) | 2,41 (IC 95 % : 1,82 à 3,18) |
+| Rapport de vraisemblance négatif (RV−) | 0,17 (IC 95 % : 0,11 à 0,25) |
+| Exactitude | 82,8 % |
+| Prévalence dans l’échantillon | 75,0 % |
+
+Les valeurs prédictives ne sont valables que pour une prévalence égale à celle de cet échantillon (75,0 %). Pour une autre prévalence, utilisez la probabilité post-test avec le RV.
+
+
+### 2
+
+Sensibilité 80,0 % et spécificité 90,0 %. Rapports de vraisemblance modérés (RV+ entre 5 et 10 ou RV− entre 0,1 et 0,2).
+
+| Détails du résultat | |
+| --- | --- |
+| Spécificité | 90,0% (IC 95% : 59,6 % à 98,2 %) |
+| Valeur prédictive positive | 88,9% (IC 95% : 56,5 % à 98,0 %) |
+| Valeur prédictive négative | 81,8% (IC 95% : 52,3 % à 94,9 %) |
+| Rapport de vraisemblance positif (RV+) | 8,00 (IC 95 % : 1,21 à 52,69) |
+| Rapport de vraisemblance négatif (RV−) | 0,22 (IC 95 % : 0,06 à 0,78) |
+| Exactitude | 85,0 % |
+| Prévalence dans l’échantillon | 50,0 % |
+
+Les valeurs prédictives ne sont valables que pour une prévalence égale à celle de cet échantillon (50,0 %). Pour une autre prévalence, utilisez la probabilité post-test avec le RV.
+

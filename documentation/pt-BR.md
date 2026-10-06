@@ -89,3 +89,41 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sensibilidade 89,5% e especificidade 62,8%. Razões de verossimilhança moderadas (RV+ entre 5 e 10 ou RV− entre 0,1 e 0,2).
+
+| Detalhes do resultado | |
+| --- | --- |
+| Especificidade | 62,8% (IC 95%: 52,2% a 72,3%) |
+| Valor preditivo positivo | 87,8% (IC 95%: 83,3% a 91,2%) |
+| Valor preditivo negativo | 66,7% (IC 95%: 55,9% a 76,0%) |
+| Razão de verossimilhança positiva (RV+) | 2,41 (IC 95%: 1,82 a 3,18) |
+| Razão de verossimilhança negativa (RV−) | 0,17 (IC 95%: 0,11 a 0,25) |
+| Acurácia | 82,8% |
+| Prevalência na amostra | 75,0% |
+
+Os valores preditivos só valem para uma prevalência igual à desta amostra (75,0%). Para outra prevalência, use a probabilidade pós-teste com a RV.
+
+
+### 2
+
+Sensibilidade 80,0% e especificidade 90,0%. Razões de verossimilhança moderadas (RV+ entre 5 e 10 ou RV− entre 0,1 e 0,2).
+
+| Detalhes do resultado | |
+| --- | --- |
+| Especificidade | 90,0% (IC 95%: 59,6% a 98,2%) |
+| Valor preditivo positivo | 88,9% (IC 95%: 56,5% a 98,0%) |
+| Valor preditivo negativo | 81,8% (IC 95%: 52,3% a 94,9%) |
+| Razão de verossimilhança positiva (RV+) | 8,00 (IC 95%: 1,21 a 52,69) |
+| Razão de verossimilhança negativa (RV−) | 0,22 (IC 95%: 0,06 a 0,78) |
+| Acurácia | 85,0% |
+| Prevalência na amostra | 50,0% |
+
+Os valores preditivos só valem para uma prevalência igual à desta amostra (50,0%). Para outra prevalência, use a probabilidade pós-teste com a RV.
+

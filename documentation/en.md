@@ -89,3 +89,41 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Sensitivity 89.5% and specificity 62.8%. Moderate likelihood ratios (LR+ between 5 and 10 or LR− between 0.1 and 0.2).
+
+| Result details | |
+| --- | --- |
+| Specificity | 62.8% (95% CI: 52.2% to 72.3%) |
+| Positive predictive value | 87.8% (95% CI: 83.3% to 91.2%) |
+| Negative predictive value | 66.7% (95% CI: 55.9% to 76.0%) |
+| Positive likelihood ratio (LR+) | 2.41 (95% CI: 1.82 to 3.18) |
+| Negative likelihood ratio (LR−) | 0.17 (95% CI: 0.11 to 0.25) |
+| Accuracy | 82.8% |
+| Prevalence in the sample | 75.0% |
+
+The predictive values are only valid for a prevalence equal to that of this sample (75.0%). For another prevalence, use the post-test probability with the LR.
+
+
+### 2
+
+Sensitivity 80.0% and specificity 90.0%. Moderate likelihood ratios (LR+ between 5 and 10 or LR− between 0.1 and 0.2).
+
+| Result details | |
+| --- | --- |
+| Specificity | 90.0% (95% CI: 59.6% to 98.2%) |
+| Positive predictive value | 88.9% (95% CI: 56.5% to 98.0%) |
+| Negative predictive value | 81.8% (95% CI: 52.3% to 94.9%) |
+| Positive likelihood ratio (LR+) | 8.00 (95% CI: 1.21 to 52.69) |
+| Negative likelihood ratio (LR−) | 0.22 (95% CI: 0.06 to 0.78) |
+| Accuracy | 85.0% |
+| Prevalence in the sample | 50.0% |
+
+The predictive values are only valid for a prevalence equal to that of this sample (50.0%). For another prevalence, use the post-test probability with the LR.
+

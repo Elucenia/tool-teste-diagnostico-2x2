@@ -1,0 +1,250 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "teste-diagnostico-2x2",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "f2711dce640e4e9fcc06e78b84e35221572c2c91",
+    "oldEngineSha256": "badc4e7b62c92c85c2d43090b252e5b5c2c71f1b098324cd96930d57db75c6ae",
+    "currentEngineSha256": "ebeb3486e6f0eafc71d1e10b25a93bcba676c0035dfef6df9dd836ce0075bf30"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+      "input": {
+        "vp": 231,
+        "fp": 32,
+        "fn": 27,
+        "vn": 54
+      },
+      "publicOutput": {
+        "id": "teste-diagnostico-2x2",
+        "main": [
+          "89,5%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+        "raw": {
+          "se": 89.53488372093024,
+          "sp": 62.7906976744186,
+          "vpp": 87.83269961977186,
+          "vpn": 66.66666666666666,
+          "lrp": 2.40625,
+          "lrn": 0.1666666666666666,
+          "acc": 82.84883720930233,
+          "seLo": 85.20214058440061,
+          "seHi": 92.70759948181326
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "se": 89.53,
+          "sp": 62.79,
+          "vpp": 87.83,
+          "vpn": 66.67,
+          "lrp": 2.406,
+          "lrn": 0.1667,
+          "acc": 82.85
+        },
+        "level": "info",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "89,5%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 85,2% a 92,7%)",
+        "level": "info",
+        "verdict": "Sensibilidade 89,5% e especificidade 62,8%. Razões de verossimilhança moderadas (RV+ entre 5 e 10 ou RV− entre 0,1 e 0,2).",
+        "rows": [
+          [
+            "Especificidade",
+            "62,8% (IC 95%: 52,2% a 72,3%)"
+          ],
+          [
+            "Valor preditivo positivo",
+            "87,8% (IC 95%: 83,3% a 91,2%)"
+          ],
+          [
+            "Valor preditivo negativo",
+            "66,7% (IC 95%: 55,9% a 76,0%)"
+          ],
+          [
+            "Razão de verossimilhança positiva (RV+)",
+            "2,41 (IC 95%: 1,82 a 3,18)"
+          ],
+          [
+            "Razão de verossimilhança negativa (RV−)",
+            "0,17 (IC 95%: 0,11 a 0,25)"
+          ],
+          [
+            "Acurácia",
+            "82,8%"
+          ],
+          [
+            "Prevalência na amostra",
+            "75,0%"
+          ]
+        ],
+        "note": "Os valores preditivos só valem para uma prevalência igual à desta amostra (75,0%). Para outra prevalência, use a probabilidade pós-teste com a RV.",
+        "raw": {
+          "se": 89.53488372093024,
+          "sp": 62.7906976744186,
+          "vpp": 87.83269961977186,
+          "vpn": 66.66666666666666,
+          "lrp": 2.40625,
+          "lrn": 0.1666666666666666,
+          "acc": 82.84883720930233,
+          "seLo": 85.20214058440061,
+          "seHi": 92.70759948181326
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+      "input": {
+        "vp": 8,
+        "fp": 1,
+        "fn": 2,
+        "vn": 9
+      },
+      "publicOutput": {
+        "id": "teste-diagnostico-2x2",
+        "main": [
+          "80,0%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+        "raw": {
+          "se": 80,
+          "sp": 90,
+          "vpp": 88.88888888888889,
+          "vpn": 81.81818181818183,
+          "lrp": 8.000000000000002,
+          "lrn": 0.22222222222222215,
+          "acc": 85,
+          "seLo": 49.016246912213234,
+          "seHi": 94.3317849062233
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "se": 80,
+          "sp": 90,
+          "lrp": 8,
+          "lrn": 0.2222,
+          "seLo": 49.02,
+          "seHi": 94.33
+        },
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "80,0%",
+          ""
+        ],
+        "label": "Sensibilidade (IC 95%: 49,0% a 94,3%)",
+        "level": "info",
+        "verdict": "Sensibilidade 80,0% e especificidade 90,0%. Razões de verossimilhança moderadas (RV+ entre 5 e 10 ou RV− entre 0,1 e 0,2).",
+        "rows": [
+          [
+            "Especificidade",
+            "90,0% (IC 95%: 59,6% a 98,2%)"
+          ],
+          [
+            "Valor preditivo positivo",
+            "88,9% (IC 95%: 56,5% a 98,0%)"
+          ],
+          [
+            "Valor preditivo negativo",
+            "81,8% (IC 95%: 52,3% a 94,9%)"
+          ],
+          [
+            "Razão de verossimilhança positiva (RV+)",
+            "8,00 (IC 95%: 1,21 a 52,69)"
+          ],
+          [
+            "Razão de verossimilhança negativa (RV−)",
+            "0,22 (IC 95%: 0,06 a 0,78)"
+          ],
+          [
+            "Acurácia",
+            "85,0%"
+          ],
+          [
+            "Prevalência na amostra",
+            "50,0%"
+          ]
+        ],
+        "note": "Os valores preditivos só valem para uma prevalência igual à desta amostra (50,0%). Para outra prevalência, use a probabilidade pós-teste com a RV.",
+        "raw": {
+          "se": 80,
+          "sp": 90,
+          "vpp": 88.88888888888889,
+          "vpn": 81.81818181818183,
+          "lrp": 8.000000000000002,
+          "lrn": 0.22222222222222215,
+          "acc": 85,
+          "seLo": 49.016246912213234,
+          "seHi": 94.3317849062233
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Sem doentes na tabela (VP e FN zero): erro",
+      "input": {
+        "vp": 0,
+        "fp": 5,
+        "fn": 0,
+        "vn": 20
+      },
+      "publicOutput": {
+        "error": "Não há doentes na tabela (VP + FN = 0): a sensibilidade não pode ser calculada.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

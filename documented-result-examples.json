@@ -1,0 +1,2891 @@
+{
+  "id": "teste-diagnostico-2x2",
+  "implementationVersion": "teste-diagnostico-2x2@native-2026-10-05+ebeb3486e6f0",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Especificidade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "62,8% (IC 95%: 52,2% a 72,3%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valor preditivo positivo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "87,8% (IC 95%: 83,3% a 91,2%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valor preditivo negativo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "66,7% (IC 95%: 55,9% a 76,0%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Razão de verossimilhança positiva (RV+)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,41 (IC 95%: 1,82 a 3,18)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Razão de verossimilhança negativa (RV−)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,17 (IC 95%: 0,11 a 0,25)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Acurácia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "82,8%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalência na amostra",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "75,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilidade 89,5% e especificidade 62,8%. Razões de verossimilhança moderadas (RV+ entre 5 e 10 ou RV− entre 0,1 e 0,2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Os valores preditivos só valem para uma prevalência igual à desta amostra (75,0%). Para outra prevalência, use a probabilidade pós-teste com a RV.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Especificidade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "90,0% (IC 95%: 59,6% a 98,2%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valor preditivo positivo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "88,9% (IC 95%: 56,5% a 98,0%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valor preditivo negativo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "81,8% (IC 95%: 52,3% a 94,9%)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Razão de verossimilhança positiva (RV+)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "8,00 (IC 95%: 1,21 a 52,69)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Razão de verossimilhança negativa (RV−)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,22 (IC 95%: 0,06 a 0,78)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Acurácia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "85,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalência na amostra",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "50,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilidade 80,0% e especificidade 90,0%. Razões de verossimilhança moderadas (RV+ entre 5 e 10 ou RV− entre 0,1 e 0,2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Os valores preditivos só valem para uma prevalência igual à desta amostra (50,0%). Para outra prevalência, use a probabilidade pós-teste com a RV.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Specificity",
+                "locale": "en",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62.8% (95% CI: 52.2% to 72.3%)",
+                "locale": "en",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Positive predictive value",
+                "locale": "en",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87.8% (95% CI: 83.3% to 91.2%)",
+                "locale": "en",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Negative predictive value",
+                "locale": "en",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66.7% (95% CI: 55.9% to 76.0%)",
+                "locale": "en",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Positive likelihood ratio (LR+)",
+                "locale": "en",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2.41 (95% CI: 1.82 to 3.18)",
+                "locale": "en",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Negative likelihood ratio (LR−)",
+                "locale": "en",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.17 (95% CI: 0.11 to 0.25)",
+                "locale": "en",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Accuracy",
+                "locale": "en",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82.8%",
+                "locale": "en",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalence in the sample",
+                "locale": "en",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75.0%",
+                "locale": "en",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensitivity 89.5% and specificity 62.8%. Moderate likelihood ratios (LR+ between 5 and 10 or LR− between 0.1 and 0.2).",
+            "locale": "en",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "The predictive values are only valid for a prevalence equal to that of this sample (75.0%). For another prevalence, use the post-test probability with the LR.",
+            "locale": "en",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Specificity",
+                "locale": "en",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90.0% (95% CI: 59.6% to 98.2%)",
+                "locale": "en",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Positive predictive value",
+                "locale": "en",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88.9% (95% CI: 56.5% to 98.0%)",
+                "locale": "en",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Negative predictive value",
+                "locale": "en",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81.8% (95% CI: 52.3% to 94.9%)",
+                "locale": "en",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Positive likelihood ratio (LR+)",
+                "locale": "en",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8.00 (95% CI: 1.21 to 52.69)",
+                "locale": "en",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Negative likelihood ratio (LR−)",
+                "locale": "en",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.22 (95% CI: 0.06 to 0.78)",
+                "locale": "en",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Accuracy",
+                "locale": "en",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85.0%",
+                "locale": "en",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalence in the sample",
+                "locale": "en",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50.0%",
+                "locale": "en",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensitivity 80.0% and specificity 90.0%. Moderate likelihood ratios (LR+ between 5 and 10 or LR− between 0.1 and 0.2).",
+            "locale": "en",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "The predictive values are only valid for a prevalence equal to that of this sample (50.0%). For another prevalence, use the post-test probability with the LR.",
+            "locale": "en",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Especificidad",
+                "locale": "es",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62,8% (IC 95%: 52,2% a 72,3%)",
+                "locale": "es",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valor predictivo positivo",
+                "locale": "es",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87,8% (IC 95%: 83,3% a 91,2%)",
+                "locale": "es",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valor predictivo negativo",
+                "locale": "es",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66,7% (IC 95%: 55,9% a 76,0%)",
+                "locale": "es",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Razón de verosimilitud positiva (RV+)",
+                "locale": "es",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2,41 (IC 95%: 1,82 a 3,18)",
+                "locale": "es",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Razón de verosimilitud negativa (RV−)",
+                "locale": "es",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,17 (IC 95%: 0,11 a 0,25)",
+                "locale": "es",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Exactitud",
+                "locale": "es",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82,8%",
+                "locale": "es",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalencia en la muestra",
+                "locale": "es",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75,0%",
+                "locale": "es",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilidad 89,5% y especificidad 62,8%. Razones de verosimilitud moderadas (RV+ entre 5 y 10 o RV− entre 0,1 y 0,2).",
+            "locale": "es",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "Los valores predictivos solo son válidos para una prevalencia igual a la de esta muestra (75,0%). Para otra prevalencia, use la probabilidad posprueba con la RV.",
+            "locale": "es",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Especificidad",
+                "locale": "es",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90,0% (IC 95%: 59,6% a 98,2%)",
+                "locale": "es",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valor predictivo positivo",
+                "locale": "es",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88,9% (IC 95%: 56,5% a 98,0%)",
+                "locale": "es",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valor predictivo negativo",
+                "locale": "es",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81,8% (IC 95%: 52,3% a 94,9%)",
+                "locale": "es",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Razón de verosimilitud positiva (RV+)",
+                "locale": "es",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8,00 (IC 95%: 1,21 a 52,69)",
+                "locale": "es",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Razón de verosimilitud negativa (RV−)",
+                "locale": "es",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,22 (IC 95%: 0,06 a 0,78)",
+                "locale": "es",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Exactitud",
+                "locale": "es",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85,0%",
+                "locale": "es",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalencia en la muestra",
+                "locale": "es",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50,0%",
+                "locale": "es",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilidad 80,0% y especificidad 90,0%. Razones de verosimilitud moderadas (RV+ entre 5 y 10 o RV− entre 0,1 y 0,2).",
+            "locale": "es",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "Los valores predictivos solo son válidos para una prevalencia igual a la de esta muestra (50,0%). Para otra prevalencia, use la probabilidad posprueba con la RV.",
+            "locale": "es",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Spécificité",
+                "locale": "fr",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62,8% (IC 95% : 52,2 % à 72,3 %)",
+                "locale": "fr",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valeur prédictive positive",
+                "locale": "fr",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87,8% (IC 95% : 83,3 % à 91,2 %)",
+                "locale": "fr",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valeur prédictive négative",
+                "locale": "fr",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66,7% (IC 95% : 55,9 % à 76,0 %)",
+                "locale": "fr",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Rapport de vraisemblance positif (RV+)",
+                "locale": "fr",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2,41 (IC 95 % : 1,82 à 3,18)",
+                "locale": "fr",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Rapport de vraisemblance négatif (RV−)",
+                "locale": "fr",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,17 (IC 95 % : 0,11 à 0,25)",
+                "locale": "fr",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Exactitude",
+                "locale": "fr",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82,8 %",
+                "locale": "fr",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prévalence dans l’échantillon",
+                "locale": "fr",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75,0 %",
+                "locale": "fr",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilité 89,5 % et spécificité 62,8 %. Rapports de vraisemblance modérés (RV+ entre 5 et 10 ou RV− entre 0,1 et 0,2).",
+            "locale": "fr",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "Les valeurs prédictives ne sont valables que pour une prévalence égale à celle de cet échantillon (75,0 %). Pour une autre prévalence, utilisez la probabilité post-test avec le RV.",
+            "locale": "fr",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Spécificité",
+                "locale": "fr",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90,0% (IC 95% : 59,6 % à 98,2 %)",
+                "locale": "fr",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valeur prédictive positive",
+                "locale": "fr",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88,9% (IC 95% : 56,5 % à 98,0 %)",
+                "locale": "fr",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valeur prédictive négative",
+                "locale": "fr",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81,8% (IC 95% : 52,3 % à 94,9 %)",
+                "locale": "fr",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Rapport de vraisemblance positif (RV+)",
+                "locale": "fr",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8,00 (IC 95 % : 1,21 à 52,69)",
+                "locale": "fr",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Rapport de vraisemblance négatif (RV−)",
+                "locale": "fr",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,22 (IC 95 % : 0,06 à 0,78)",
+                "locale": "fr",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Exactitude",
+                "locale": "fr",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85,0 %",
+                "locale": "fr",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prévalence dans l’échantillon",
+                "locale": "fr",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50,0 %",
+                "locale": "fr",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilité 80,0 % et spécificité 90,0 %. Rapports de vraisemblance modérés (RV+ entre 5 et 10 ou RV− entre 0,1 et 0,2).",
+            "locale": "fr",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "Les valeurs prédictives ne sont valables que pour une prévalence égale à celle de cet échantillon (50,0 %). Pour une autre prévalence, utilisez la probabilité post-test avec le RV.",
+            "locale": "fr",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Spezifität",
+                "locale": "de",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62,8 % (95-%-KI: 52,2 % bis 72,3 %)",
+                "locale": "de",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Positiver prädiktiver Wert",
+                "locale": "de",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87,8 % (95-%-KI: 83,3 % bis 91,2 %)",
+                "locale": "de",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Negativer prädiktiver Wert",
+                "locale": "de",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66,7 % (95-%-KI: 55,9 % bis 76,0 %)",
+                "locale": "de",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Positiver Likelihood-Ratio (RV+)",
+                "locale": "de",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2,41 (95-%-KI: 1,82 bis 3,18)",
+                "locale": "de",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Negativer Likelihood-Ratio (RV−)",
+                "locale": "de",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,17 (95-%-KI: 0,11 bis 0,25)",
+                "locale": "de",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Genauigkeit",
+                "locale": "de",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82,8 %",
+                "locale": "de",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prävalenz in der Stichprobe",
+                "locale": "de",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75,0 %",
+                "locale": "de",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensitivität 89,5% und Spezifität 62,8%. Moderate Likelihood-Ratios (LR+ zwischen 5 und 10 oder LR− zwischen 0,1 und 0,2).",
+            "locale": "de",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "Die prädiktiven Werte gelten nur für eine Prävalenz, die der dieses Stichproben entspricht (75,0%). Für eine andere Prävalenz verwenden Sie die Post-Test-Wahrscheinlichkeit mit dem LR.",
+            "locale": "de",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Spezifität",
+                "locale": "de",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90,0 % (95-%-KI: 59,6 % bis 98,2 %)",
+                "locale": "de",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Positiver prädiktiver Wert",
+                "locale": "de",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88,9 % (95-%-KI: 56,5 % bis 98,0 %)",
+                "locale": "de",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Negativer prädiktiver Wert",
+                "locale": "de",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81,8 % (95-%-KI: 52,3 % bis 94,9 %)",
+                "locale": "de",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Positiver Likelihood-Ratio (RV+)",
+                "locale": "de",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8,00 (95-%-KI: 1,21 bis 52,69)",
+                "locale": "de",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Negativer Likelihood-Ratio (RV−)",
+                "locale": "de",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,22 (95-%-KI: 0,06 bis 0,78)",
+                "locale": "de",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Genauigkeit",
+                "locale": "de",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85,0 %",
+                "locale": "de",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prävalenz in der Stichprobe",
+                "locale": "de",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50,0 %",
+                "locale": "de",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensitivität 80,0% und Spezifität 90,0%. Moderate Likelihood-Ratios (LR+ zwischen 5 und 10 oder LR− zwischen 0,1 und 0,2).",
+            "locale": "de",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "Die prädiktiven Werte gelten nur für eine Prävalenz, die der dieses Stichproben entspricht (50,0%). Für eine andere Prävalenz verwenden Sie die Post-Test-Wahrscheinlichkeit mit dem LR.",
+            "locale": "de",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Specificità",
+                "locale": "it",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62,8% (IC 95%: 52,2% a 72,3%)",
+                "locale": "it",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valore predittivo positivo",
+                "locale": "it",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87,8% (IC 95%: 83,3% a 91,2%)",
+                "locale": "it",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valore predittivo negativo",
+                "locale": "it",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66,7% (IC 95%: 55,9% a 76,0%)",
+                "locale": "it",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Rapporto di verosimiglianza positivo (RV+)",
+                "locale": "it",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2,41 (IC 95%: 1,82 a 3,18)",
+                "locale": "it",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Rapporto di verosimiglianza negativo (RV−)",
+                "locale": "it",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,17 (IC 95%: 0,11 a 0,25)",
+                "locale": "it",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Accuratezza",
+                "locale": "it",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82,8%",
+                "locale": "it",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalenza nel campione",
+                "locale": "it",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75,0%",
+                "locale": "it",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilità 89,5% e specificità 62,8%. Rapporti di verosimiglianza moderati (RV+ tra 5 e 10 oppure RV− tra 0,1 e 0,2).",
+            "locale": "it",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "I valori predittivi valgono solo per una prevalenza uguale a quella di questo campione (75,0%). Per un’altra prevalenza, usare la probabilità post-test con il RV.",
+            "locale": "it",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Specificità",
+                "locale": "it",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90,0% (IC 95%: 59,6% a 98,2%)",
+                "locale": "it",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Valore predittivo positivo",
+                "locale": "it",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88,9% (IC 95%: 56,5% a 98,0%)",
+                "locale": "it",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Valore predittivo negativo",
+                "locale": "it",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81,8% (IC 95%: 52,3% a 94,9%)",
+                "locale": "it",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Rapporto di verosimiglianza positivo (RV+)",
+                "locale": "it",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8,00 (IC 95%: 1,21 a 52,69)",
+                "locale": "it",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "Rapporto di verosimiglianza negativo (RV−)",
+                "locale": "it",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0,22 (IC 95%: 0,06 a 0,78)",
+                "locale": "it",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "Accuratezza",
+                "locale": "it",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85,0%",
+                "locale": "it",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "Prevalenza nel campione",
+                "locale": "it",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50,0%",
+                "locale": "it",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sensibilità 80,0% e specificità 90,0%. Rapporti di verosimiglianza moderati (RV+ tra 5 e 10 oppure RV− tra 0,1 e 0,2).",
+            "locale": "it",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "I valori predittivi valgono solo per una prevalenza uguale a quella di questo campione (50,0%). Per un’altra prevalenza, usare la probabilità post-test con il RV.",
+            "locale": "it",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "النوعية",
+                "locale": "ar",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "٦٢٫٨% (فاصل الثقة 95%: من ٥٢٫٢% إلى ٧٢٫٣%)",
+                "locale": "ar",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "القيمة التنبؤية الإيجابية",
+                "locale": "ar",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "٨٧٫٨% (فاصل الثقة 95%: من ٨٣٫٣% إلى ٩١٫٢%)",
+                "locale": "ar",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "القيمة التنبؤية السلبية",
+                "locale": "ar",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "٦٦٫٧% (فاصل الثقة 95%: من ٥٥٫٩% إلى ٧٦٫٠%)",
+                "locale": "ar",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "نسبة الاحتمال الإيجابية (RV+)",
+                "locale": "ar",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "٢٫٤١ (فاصل الثقة 95%: من ١٫٨٢ إلى ٣٫١٨)",
+                "locale": "ar",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "نسبة الاحتمال السلبية (RV−)",
+                "locale": "ar",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "٠٫١٧ (فاصل الثقة 95%: من ٠٫١١ إلى ٠٫٢٥)",
+                "locale": "ar",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "الدقة",
+                "locale": "ar",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "٨٢٫٨%",
+                "locale": "ar",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "الانتشار في العينة",
+                "locale": "ar",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "٧٥٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الحساسية ٨٩٫٥% والنوعية ٦٢٫٨%. نسب الاحتمال معتدلة (RV+ بين 5 و10 أو RV− بين 0,1 و0,2).",
+            "locale": "ar",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "القيم التنبؤية صالحة فقط إذا كان معدل الانتشار مساويًا لمعدل هذا العينة (٧٥٫٠%). ولانتشار آخر، استخدم الاحتمال بعد الاختبار مع RV.",
+            "locale": "ar",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "النوعية",
+                "locale": "ar",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "٩٠٫٠% (فاصل الثقة 95%: من ٥٩٫٦% إلى ٩٨٫٢%)",
+                "locale": "ar",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "القيمة التنبؤية الإيجابية",
+                "locale": "ar",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "٨٨٫٩% (فاصل الثقة 95%: من ٥٦٫٥% إلى ٩٨٫٠%)",
+                "locale": "ar",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "القيمة التنبؤية السلبية",
+                "locale": "ar",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "٨١٫٨% (فاصل الثقة 95%: من ٥٢٫٣% إلى ٩٤٫٩%)",
+                "locale": "ar",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "نسبة الاحتمال الإيجابية (RV+)",
+                "locale": "ar",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "٨٫٠٠ (فاصل الثقة 95%: من ١٫٢١ إلى ٥٢٫٦٩)",
+                "locale": "ar",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "نسبة الاحتمال السلبية (RV−)",
+                "locale": "ar",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "٠٫٢٢ (فاصل الثقة 95%: من ٠٫٠٦ إلى ٠٫٧٨)",
+                "locale": "ar",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "الدقة",
+                "locale": "ar",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "٨٥٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "الانتشار في العينة",
+                "locale": "ar",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "٥٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الحساسية ٨٠٫٠% والنوعية ٩٠٫٠%. نسب الاحتمال معتدلة (RV+ بين 5 و10 أو RV− بين 0,1 و0,2).",
+            "locale": "ar",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "القيم التنبؤية صالحة فقط إذا كان معدل الانتشار مساويًا لمعدل هذا العينة (٥٠٫٠%). ولانتشار آخر، استخدم الاحتمال بعد الاختبار مع RV.",
+            "locale": "ar",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "特异度",
+                "locale": "zh",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62.8%（95% CI：52.2% 至 72.3%）",
+                "locale": "zh",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "阳性预测值",
+                "locale": "zh",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87.8%（95% CI：83.3% 至 91.2%）",
+                "locale": "zh",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "阴性预测值",
+                "locale": "zh",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66.7%（95% CI：55.9% 至 76.0%）",
+                "locale": "zh",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "阳性似然比 (RV+)",
+                "locale": "zh",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2.41（95% CI：1.82 至 3.18）",
+                "locale": "zh",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "阴性似然比 (RV−)",
+                "locale": "zh",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.17（95% CI：0.11 至 0.25）",
+                "locale": "zh",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "准确性",
+                "locale": "zh",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82.8%",
+                "locale": "zh",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "样本中的患病率",
+                "locale": "zh",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75.0%",
+                "locale": "zh",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "敏感度 89.5%，特异度 62.8%。中等似然比（LR+ 在 5 和 10 之间，或 LR− 在 0.1 和 0.2 之间）。",
+            "locale": "zh",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "预测值仅适用于与本样本相同的患病率（75.0%）。对于其他患病率，请使用与 LR 结合的检后概率。",
+            "locale": "zh",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "特异度",
+                "locale": "zh",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90.0%（95% CI：59.6% 至 98.2%）",
+                "locale": "zh",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "阳性预测值",
+                "locale": "zh",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88.9%（95% CI：56.5% 至 98.0%）",
+                "locale": "zh",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "阴性预测值",
+                "locale": "zh",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81.8%（95% CI：52.3% 至 94.9%）",
+                "locale": "zh",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "阳性似然比 (RV+)",
+                "locale": "zh",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8.00（95% CI：1.21 至 52.69）",
+                "locale": "zh",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "阴性似然比 (RV−)",
+                "locale": "zh",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.22（95% CI：0.06 至 0.78）",
+                "locale": "zh",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "准确性",
+                "locale": "zh",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85.0%",
+                "locale": "zh",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "样本中的患病率",
+                "locale": "zh",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50.0%",
+                "locale": "zh",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "敏感度 80.0%，特异度 90.0%。中等似然比（LR+ 在 5 和 10 之间，或 LR− 在 0.1 和 0.2 之间）。",
+            "locale": "zh",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "预测值仅适用于与本样本相同的患病率（50.0%）。对于其他患病率，请使用与 LR 结合的检后概率。",
+            "locale": "zh",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "特異度",
+                "locale": "ja",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62.8%（95% CI: 52.2%～72.3%）",
+                "locale": "ja",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "陽性的適中率",
+                "locale": "ja",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87.8%（95% CI: 83.3%～91.2%）",
+                "locale": "ja",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "陰性的適中率",
+                "locale": "ja",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66.7%（95% CI: 55.9%～76.0%）",
+                "locale": "ja",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "陽性尤度比 (RV+)",
+                "locale": "ja",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2.41（95% CI: 1.82～3.18）",
+                "locale": "ja",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "陰性尤度比 (RV−)",
+                "locale": "ja",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.17（95% CI: 0.11～0.25）",
+                "locale": "ja",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "正確度",
+                "locale": "ja",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82.8%",
+                "locale": "ja",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "サンプル内の有病率",
+                "locale": "ja",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75.0%",
+                "locale": "ja",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "感度 89.5%、特異度 62.8%。尤度比は中等度（LR+ は 5〜10、または LR− は 0.1〜0.2）。",
+            "locale": "ja",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "予測値は、このサンプルと同じ有病率（75.0%）の場合にのみ有効です。別の有病率では、LR を用いた検査後確率を使用してください。",
+            "locale": "ja",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "特異度",
+                "locale": "ja",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90.0%（95% CI: 59.6%～98.2%）",
+                "locale": "ja",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "陽性的適中率",
+                "locale": "ja",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88.9%（95% CI: 56.5%～98.0%）",
+                "locale": "ja",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "陰性的適中率",
+                "locale": "ja",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81.8%（95% CI: 52.3%～94.9%）",
+                "locale": "ja",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "陽性尤度比 (RV+)",
+                "locale": "ja",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8.00（95% CI: 1.21～52.69）",
+                "locale": "ja",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "陰性尤度比 (RV−)",
+                "locale": "ja",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.22（95% CI: 0.06～0.78）",
+                "locale": "ja",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "正確度",
+                "locale": "ja",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85.0%",
+                "locale": "ja",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "サンプル内の有病率",
+                "locale": "ja",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50.0%",
+                "locale": "ja",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "感度 80.0%、特異度 90.0%。尤度比は中等度（LR+ は 5〜10、または LR− は 0.1〜0.2）。",
+            "locale": "ja",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "予測値は、このサンプルと同じ有病率（50.0%）の場合にのみ有効です。別の有病率では、LR を用いた検査後確率を使用してください。",
+            "locale": "ja",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Exemplo de Altman e Bland (cintilografia hepática): VP 231, FP 32, FN 27, VN 54",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "विशिष्टता",
+                "locale": "hi",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "62.8% (95% CI: 52.2% से 72.3%)",
+                "locale": "hi",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  62.8,
+                  52.2,
+                  72.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "धनात्मक पूर्वानुमानित मान",
+                "locale": "hi",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "87.8% (95% CI: 83.3% से 91.2%)",
+                "locale": "hi",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  87.8,
+                  83.3,
+                  91.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ऋणात्मक पूर्वानुमानित मान",
+                "locale": "hi",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "66.7% (95% CI: 55.9% से 76.0%)",
+                "locale": "hi",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  66.7,
+                  55.9,
+                  76
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "धनात्मक संभाव्यता अनुपात (RV+)",
+                "locale": "hi",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "2.41 (95% CI: 1.82 से 3.18)",
+                "locale": "hi",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  2.41,
+                  1.82,
+                  3.18
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "ऋणात्मक संभाव्यता अनुपात (RV−)",
+                "locale": "hi",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.17 (95% CI: 0.11 से 0.25)",
+                "locale": "hi",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.17,
+                  0.11,
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "सटीकता",
+                "locale": "hi",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "82.8%",
+                "locale": "hi",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  82.8
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "नमूने में प्रचलन",
+                "locale": "hi",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "75.0%",
+                "locale": "hi",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  75
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "संवेदनशीलता 89.5% और विशिष्टता 62.8%। मध्यम लाइकलीहुड अनुपात (RV+ 5 और 10 के बीच या RV− 0.1 और 0.2 के बीच)।",
+            "locale": "hi",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              89.5,
+              62.8
+            ]
+          },
+          "note": {
+            "text": "पूर्वानुमानात्मक मान केवल इस नमूने के बराबर प्रचलन (75.0%) पर ही मान्य हैं। किसी अन्य प्रचलन के लिए, LR के साथ परीक्षण-पश्चात संभावना का उपयोग करें।",
+            "locale": "hi",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              75
+            ]
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "VP 8, FN 2, FP 1, VN 9: sensibilidade 80% com IC de Wilson 49,0% a 94,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "विशिष्टता",
+                "locale": "hi",
+                "template": "documented-authored-5375f044316a3101e81a"
+              },
+              "value": {
+                "text": "90.0% (95% CI: 59.6% से 98.2%)",
+                "locale": "hi",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  90,
+                  59.6,
+                  98.2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "धनात्मक पूर्वानुमानित मान",
+                "locale": "hi",
+                "template": "documented-authored-ca0b551e9b7348fb4b13"
+              },
+              "value": {
+                "text": "88.9% (95% CI: 56.5% से 98.0%)",
+                "locale": "hi",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  88.9,
+                  56.5,
+                  98
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "ऋणात्मक पूर्वानुमानित मान",
+                "locale": "hi",
+                "template": "documented-authored-eeeff39136e70a365588"
+              },
+              "value": {
+                "text": "81.8% (95% CI: 52.3% से 94.9%)",
+                "locale": "hi",
+                "template": "documented-authored-af0412b4bd5e360ddbc5",
+                "sourceNumbers": [
+                  81.8,
+                  52.3,
+                  94.9
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "धनात्मक संभाव्यता अनुपात (RV+)",
+                "locale": "hi",
+                "template": "documented-authored-3879a15b395b10c99adc"
+              },
+              "value": {
+                "text": "8.00 (95% CI: 1.21 से 52.69)",
+                "locale": "hi",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  8,
+                  1.21,
+                  52.69
+                ]
+              }
+            },
+            {
+              "key": "documented-4",
+              "label": {
+                "text": "ऋणात्मक संभाव्यता अनुपात (RV−)",
+                "locale": "hi",
+                "template": "documented-authored-21ba0df4fcf65bce2441"
+              },
+              "value": {
+                "text": "0.22 (95% CI: 0.06 से 0.78)",
+                "locale": "hi",
+                "template": "documented-authored-20e9396baf4e7487cb19",
+                "sourceNumbers": [
+                  0.22,
+                  0.06,
+                  0.78
+                ]
+              }
+            },
+            {
+              "key": "documented-5",
+              "label": {
+                "text": "सटीकता",
+                "locale": "hi",
+                "template": "documented-authored-b5c3e28ab9c274e56b07"
+              },
+              "value": {
+                "text": "85.0%",
+                "locale": "hi",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            },
+            {
+              "key": "documented-6",
+              "label": {
+                "text": "नमूने में प्रचलन",
+                "locale": "hi",
+                "template": "documented-authored-6bf7db0063226a87188b"
+              },
+              "value": {
+                "text": "50.0%",
+                "locale": "hi",
+                "template": "documented-authored-53441e06f2fb1cb3c93d",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "संवेदनशीलता 80.0% और विशिष्टता 90.0%। मध्यम लाइकलीहुड अनुपात (RV+ 5 और 10 के बीच या RV− 0.1 और 0.2 के बीच)।",
+            "locale": "hi",
+            "template": "documented-authored-d4413faec639fc34112c",
+            "sourceNumbers": [
+              80,
+              90
+            ]
+          },
+          "note": {
+            "text": "पूर्वानुमानात्मक मान केवल इस नमूने के बराबर प्रचलन (50.0%) पर ही मान्य हैं। किसी अन्य प्रचलन के लिए, LR के साथ परीक्षण-पश्चात संभावना का उपयोग करें।",
+            "locale": "hi",
+            "template": "documented-authored-25251532c8f821fc591b",
+            "sourceNumbers": [
+              50
+            ]
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}
